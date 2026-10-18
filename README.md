@@ -1,4 +1,6 @@
 # Python Backend & AI Development Learning
+<p>By Innovative Skills Ltd.</p>
+Website: https://innovativeskillsbd.com/
 
 <p align="center">
   <strong>A hands-on journey from Python fundamentals to Backend Engineering and AI-powered applications.</strong>
