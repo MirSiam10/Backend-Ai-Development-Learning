@@ -1,16 +1,16 @@
 create table person (
-	id INT,
-	first_name VARCHAR(50),
-	last_name VARCHAR(50),
-	gender VARCHAR(50),
-	email VARCHAR(50),
+	id BIGSERIAL NOT NULL PRIMARY KEY,
+	first_name VARCHAR (50) NOT NULL,
+	last_name VARCHAR (50) NOT NULL,
+	gender VARCHAR (50) NOT NULL,
+	email VARCHAR (100),
 	date_of_birth DATE
 );
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (1, 'Marianna', 'Gibbins', 'Female', null, '2014-11-05');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (2, 'Wells', 'Barrow', 'Male', 'wbarrow1@reuters.com', '2015-04-16');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (3, 'Calla', 'Hebden', 'Female', null, '2023-09-21');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (4, 'Peterus', 'Pickvance', 'Male', null, '2019-04-11');
-insert into person (id, first_name, last_name, gender, email, date_of_birth) values (5, 'Bethina', 'Clemente', 'Genderqueer', 'bclemente4@redcross.org', '2018-02-27');
+insert into person (id, first_name, last_name, gender, email, date_of_birth) values (5, 'Bethina', 'Clemente', 'Female', 'bclemente4@redcross.org', '2018-02-27');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (6, 'Rudyard', 'Vasyutkin', 'Male', 'rvasyutkin5@cnet.com', '2013-04-05');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (7, 'Wildon', 'Haswell', 'Male', null, '2012-12-10');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (8, 'Chandler', 'Bransdon', 'Male', 'cbransdon7@disqus.com', '2019-01-11');
@@ -44,7 +44,7 @@ insert into person (id, first_name, last_name, gender, email, date_of_birth) val
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (36, 'Dario', 'Motion', 'Male', 'dmotionz@dedecms.com', '2011-08-29');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (37, 'Nester', 'Leaming', 'Male', 'nleaming10@bigcartel.com', '2014-08-15');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (38, 'Leola', 'Stawell', 'Female', 'lstawell11@123-reg.co.uk', '2002-01-03');
-insert into person (id, first_name, last_name, gender, email, date_of_birth) values (39, 'Evita', 'Daltrey', 'Genderqueer', 'edaltrey12@kickstarter.com', '2005-07-31');
+insert into person (id, first_name, last_name, gender, email, date_of_birth) values (39, 'Evita', 'Daltrey', 'Female', 'edaltrey12@kickstarter.com', '2005-07-31');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (40, 'Kenton', 'Spada', 'Male', 'kspada13@prnewswire.com', '2022-11-07');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (41, 'Aurora', 'MacFadzean', 'Female', 'amacfadzean14@theglobeandmail.com', '2006-08-27');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (42, 'Penny', 'Paaso', 'Female', 'ppaaso15@theguardian.com', '2017-12-05');
@@ -334,7 +334,7 @@ insert into person (id, first_name, last_name, gender, email, date_of_birth) val
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (326, 'Dyanne', 'Pull', 'Female', 'dpull91@vkontakte.ru', '2012-03-02');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (327, 'Bette', 'Humbell', 'Female', null, '2010-02-04');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (328, 'Celeste', 'Hadwin', 'Female', 'chadwin93@topsy.com', '2004-02-13');
-insert into person (id, first_name, last_name, gender, email, date_of_birth) values (329, 'Syman', 'O''Coskerry', 'Bigender', null, '2005-05-25');
+insert into person (id, first_name, last_name, gender, email, date_of_birth) values (329, 'Syman', 'O''Coskerry', 'Male', null, '2005-05-25');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (330, 'Paule', 'McKenzie', 'Female', 'pmckenzie95@squidoo.com', '2000-05-12');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (331, 'Lane', 'Towey', 'Female', null, '2002-02-17');
 insert into person (id, first_name, last_name, gender, email, date_of_birth) values (332, 'Bruno', 'Grzelczyk', 'Male', null, '2001-07-18');
