@@ -5,6 +5,6 @@ from .models import Reservation
 
 class ReservationForm(forms.ModelForm):
     class Meta:
-        Model = Reservation
+        model = Reservation
         fields = '__all__'
     

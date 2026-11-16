@@ -1,4 +1,6 @@
 from django.shortcuts import render  # type: ignore[import-untyped]
+from django.shortcuts import render
+
 from django.http import HttpResponse  # type: ignore[import-untyped]
 from django.views import View  # type: ignore[import-untyped]
 
@@ -17,7 +19,7 @@ def home(request):
 
     if request.method == 'POST':
         form = ReservationForm(request.POST)
-        if form.is_valid()
+        if form.is_valid():
             form.save()
             return HttpResponse('Success')
 
