@@ -12,5 +12,6 @@
             "connectionTimeout": 30,
             "database": "postgres"
         }
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:pipenv"
 }
